@@ -15,7 +15,7 @@ jobs:
         id: nuclei_scan
         uses: projectdiscovery/nuclei-action@main
         with:
-          target: https://bug-free-palm-tree-97647v9jp5g7fxpj4-3000.app.github.dev/#/
+          target: https://www.hackthissite.org/
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v4
