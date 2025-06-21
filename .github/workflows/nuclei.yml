@@ -15,7 +15,7 @@ jobs:
         id: nuclei_scan
         uses: projectdiscovery/nuclei-action@main
         with:
-          target: https://www.hackthissite.org/
+          target: https://demo.owasp-juice.shop/#/
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v4
