@@ -46,6 +46,10 @@ jobs:
   trivy:
     name: trivy scan imagens Docker
     runs-on: ubuntu-24.04
+    needs: 
+      - sonarcloud
+      - snyk
+      - gitleaks      
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
