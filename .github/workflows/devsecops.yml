@@ -45,7 +45,10 @@ jobs:
 
   zap_scan:
     runs-on: ubuntu-latest
-    needs: snyk
+    needs: 
+      - sonarcloud
+      - snyk
+      - gitleaks
     name: ZAP - DAST
     steps:
       - name: Checkout
